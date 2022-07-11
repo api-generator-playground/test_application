@@ -11,12 +11,14 @@ sourceCompatibility = '11'
 repositories {
 	mavenCentral()
 	mavenLocal()
+	maven { url 'https://jitpack.io' }
 }
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web:2.7.0'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test:2.7.0'
-	implementation 'org.apigenerator.playground:metrics_library:1.0'
+//	implementation 'org.apigenerator.playground:metrics_library:1.0'
+	implementation 'com.github.api-generator-playground:metrics_library:promQL-SNAPSHOT'
 }
 
 tasks.named('test') {
